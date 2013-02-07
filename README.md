@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Vagrant LAMP
 ============
@@ -50,3 +51,9 @@ And like any other vagrant file you have SSH access with
 vagrant-lamp
 ============
 
+=======
+zendframework
+=============
+
+zend framework oefening
+>>>>>>> 227b17c643e23a797685bd61fec44b0eaba3d37c
