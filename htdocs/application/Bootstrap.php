@@ -13,6 +13,20 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $front->registerPlugin(new Syntra_Controller_Plugin_Navigation());
         
     }
+    
+    public function _initDbAdapter()
+    {
+        // al de resources uit application.ini inladen
+        $this->bootstrap('db');
+        $db = $this->getResource('db');
+        
+        Zend_Registry::set('db', $db);
+        // zend registry globale variabele, ophalen -> Zend_Registry::get('db');
+        // overal in je project beschikbaar (bvb user oproepen zonder connectie
+        // met database.
+        
+        
+    }
 
 }
 
